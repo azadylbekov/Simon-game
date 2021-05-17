@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div id="simon">
+		<div class="container">
+			<div class="simon-wrapper">
+				<div id="status">Choose the level of difficulty</div>
+				<div class="difficulty">
+					<span id="easy" class='level-active'>Easy</span>
+					<span id="medium">Medium</span>
+					<span id="hard">Hard</span>
+				</div>
+				<div class="simon-circle">
+					<div class="inner-circle">
+						<div id="start-btn">Start</div>
+					</div>
+					<div id="buttons">
+						<div class='btn btn-top-left green' data-num='0'></div>
+						<div class='btn btn-top-right red' data-num='1'></div>
+						<div class='btn btn-bottom-left yellow' data-num='2'></div>
+						<div class='btn btn-bottom-right blue' data-num='3'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src='main.js'></script>
+</body>
+
+</html>

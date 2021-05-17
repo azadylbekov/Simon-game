@@ -1,0 +1,186 @@
+body {
+	font-family: "Helvetica";
+}
+
+.container {
+	max-width: 1200px;
+	margin: 50px auto;
+}
+
+#status {
+	font-size: 45px;
+	color: red;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.difficulty {
+	text-align: center;
+	font-size: 24px;
+}
+
+.difficulty span {
+	padding: 20px;
+	background-color: #0d6efd;
+	color: #fff;
+	cursor: pointer;
+	z-index: 10;
+	border-radius: 2px;
+}
+
+#hard {
+	background-color: #dc3545;
+}
+
+#medium {
+	background: #ffc107;
+}
+
+#easy {
+	background: #198754;
+}
+
+.level-active {
+	box-shadow: inset 1px 1px 10px #333;
+}
+
+.simon-circle {
+	background-color: #000;
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+	border-radius: 100%;
+	position: relative;
+}
+
+#buttons {
+	display: flex;
+	flex-wrap: wrap;
+	height: 500px;
+	width: 500px;
+	border-radius: 100%;
+}
+
+.inner-circle {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: #000;
+	border-radius: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#start-btn {
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+	width: 150px;
+	height: 150px;
+	background: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+#start-btn:hover {
+	box-shadow: 1px 1px 7px 5px rgb(179 20 20 / 75%);
+}
+
+.btn {
+	flex: 0 0 50%;
+	background: red;
+	border: 10px solid #000;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.btn-top-left {
+	border-top-left-radius: 100%;
+}
+
+.btn-top-right {
+	border-top-right-radius: 100%;
+}
+
+.btn-bottom-left {
+	border-bottom-left-radius: 100%;
+}
+
+.btn-bottom-right {
+	border-bottom-right-radius: 100%;
+}
+
+.green {
+	background-color: green;
+}
+.green:active {
+	background-color: #00e300;
+}
+.red {
+	background-color: #b80303;
+}
+.red:active {
+	background-color: red;
+}
+.yellow {
+	background-color: #c6c603;
+}
+.yellow:active {
+	background: yellow;
+}
+.blue {
+	background-color: #0000be;
+}
+.blue:active {
+	background-color: blue;
+}
+
+.green-active {
+	background-color: #00e300;
+}
+
+.red-active {
+	background-color: red;
+}
+
+.yellow-active {
+	background: yellow;
+}
+
+.blue-active {
+	background-color: blue;
+}
+
+.active {
+	box-shadow: 0px 0px 17px 0px #fff;
+}
+
+
+@media (max-width: 565px) {
+  .simon-circle {
+		width: 340px;
+		height: 340px;
+	}
+	.inner-circle {
+		height: 130px;
+		width: 130px;
+	}
+	#start-btn {
+		width: 100px;
+		height: 100px;
+		font-size: 20px;
+	}
+
+	#buttons {
+		width: 340px;
+		height: 340px;
+	}
+}
